@@ -154,6 +154,11 @@ body {
   width: 48px;
 }
 
+.icon_64 {
+  height: 64px;
+  width: 64px;
+}
+
 .h_menu {
   height: 32px;
   padding: 20px 16px;
@@ -169,12 +174,34 @@ body {
      object-fit: cover;
 }
 
-.h_resturant {
+.h_restaurant {
   padding: 0 16px;
 }
-.h_resturant .h_rest_left {
+
+.h_resturant_card {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.h_resturant_card .h_rest_left {
   height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.h_resturant_card .h_res_right {
+  gap: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h_restaurant_logo {
+  position: relative;
+  transform: translateY(-80%);
+}
+.h_restaurant_logo .h_pizza-logo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
