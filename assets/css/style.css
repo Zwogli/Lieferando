@@ -9,12 +9,14 @@ body {
 
 :root {
   --color-text-main: #000000;
+  --color-text-alert:#CF3102;
   --color-bg-main:#FFFFFF;
   --color-bg-second: #FCFCFC;
   --color-bg-icon:#F5F3F1;
   --color-bg-icon-hover:#E0E0E0;
   --color-bg-icon-aktive:#D7D5D4;
   --color-btn:#262626;
+  --color-border:#efedea;
 }
 
 /* roboto-100 - latin */
@@ -125,6 +127,16 @@ body {
   src: url("../assets/fonts/robotoroboto-v30-latin-900italic.eot"); /* IE9 Compat Modes */
   src: url("../assets/fonts/robotoroboto-v30-latin-900italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/robotoroboto-v30-latin-900italic.woff2") format("woff2"), url("../assets/fonts/robotoroboto-v30-latin-900italic.woff") format("woff"), url("../assets/fonts/robotoroboto-v30-latin-900italic.ttf") format("truetype"), url("../assets/fonts/robotoroboto-v30-latin-900italic.svg#Roboto") format("svg"); /* Legacy iOS */
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cicle {
+  border-radius: 50%;
+}
+
 .cicle_48 {
   height: 48px;
   width: 48px;
@@ -139,6 +151,11 @@ body {
   display: none;
 }
 
+.icon_16 {
+  height: 16px;
+  width: 16px;
+}
+
 .icon_20 {
   height: 20px;
   width: 20px;
@@ -147,6 +164,11 @@ body {
 .icon_24 {
   height: 24px;
   width: 24px;
+}
+
+.icon_32 {
+  height: 32px;
+  width: 32px;
 }
 
 .icon_48 {
@@ -159,12 +181,35 @@ body {
   width: 64px;
 }
 
+.margin_r_8 {
+  margin-right: 8px;
+}
+
+.rotate {
+  rotate: 90deg;
+}
+
+.t_14 {
+  font-size: 14px;
+}
+
+.t_alert {
+  color: var(--color-text-alert);
+}
+
+.t_underline {
+  text-decoration: underline;
+}
+
 .h_menu {
   height: 32px;
   padding: 20px 16px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.h_menu .h_menu_right {
+  display: flex;
 }
 
 .h_img {
@@ -178,10 +223,27 @@ body {
   padding: 0 16px;
 }
 
+.h_restaurant_logo {
+  position: relative;
+  transform: translateY(-80%);
+}
+.h_restaurant_logo .h_pizza-logo {
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background-color: var(--color-border);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .h_resturant_card {
+  min-height: 92px;
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  transform: translateY(-50%);
 }
 .h_resturant_card .h_rest_left {
   height: 90px;
@@ -189,19 +251,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.h_resturant_card .h_rest_left .h_rest_evaluation {
+  margin-top: 16px;
+}
+.h_resturant_card .h_rest_left .h_rest_evaluation .h_res_delivery {
+  margin-top: 8px;
+  display: flex;
+}
 .h_resturant_card .h_res_right {
   gap: 8px;
   display: flex;
   justify-content: flex-end;
-}
-
-.h_restaurant_logo {
-  position: relative;
-  transform: translateY(-80%);
-}
-.h_restaurant_logo .h_pizza-logo {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
