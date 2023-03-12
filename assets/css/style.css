@@ -137,14 +137,18 @@ body {
   border-radius: 50%;
 }
 
+.cicle_32 {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: var(--color-bg-icon);
+}
+
 .cicle_48 {
   height: 48px;
   width: 48px;
   border-radius: 50%;
   background-color: var(--color-bg-icon);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .d-none {
@@ -262,4 +266,8 @@ body {
   gap: 8px;
   display: flex;
   justify-content: flex-end;
+}
+
+main {
+  background-color: var(--color-bg-main);
 }
