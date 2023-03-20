@@ -131,6 +131,10 @@ body {
   src: url("../fonts/roboto/robotoroboto-v30-latin-900italic.eot"); /* IE9 Compat Modes */
   src: url("../fonts/roboto/robotoroboto-v30-latin-900italic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/robotoroboto-v30-latin-900italic.woff2") format("woff2"), url("../fonts/roboto/robotoroboto-v30-latin-900italic.woff") format("woff"), url("../fonts/roboto/robotoroboto-v30-latin-900italic.ttf") format("truetype"), url("../fonts/roboto/robotoroboto-v30-latin-900italic.svg#Roboto") format("svg"); /* Legacy iOS */
 }
+.bold {
+  font-weight: bold;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -142,8 +146,8 @@ body {
 }
 
 .cicle_32 {
-  height: 32px;
-  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
   border-radius: 50%;
   background-color: var(--color-bg-icon);
 }
@@ -276,7 +280,32 @@ body {
 }
 
 nav {
+  height: 56px;
   padding: var(--padding-0-16px);
+  position: sticky;
+  display: flex;
+  align-items: center;
+}
+
+#navbar {
+  overflow-x: scroll;
+  display: flex;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar ul .nav_div {
+  height: 32px;
+  padding: 5px 12px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#navbar ul .nav_div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {

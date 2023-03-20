@@ -1,12 +1,38 @@
-
 function generateHtmlNavbar(){
     return /*html*/`
-    ${restaurants.favourit.name}
-    ${restaurants.salad.name}
-    ${restaurants.pizza.name}
-    ${restaurants.hamburger.name}
-    ${restaurants.desserts.name}
-    ${restaurants.drinks.name}
+    <ul>
+        <li>    
+            <div class="nav_div">
+                <a class="t_14 bold">${restaurants.favourit.name}</a>
+            </div>
+        </li>
+        <li>
+            <div class="nav_div">
+                <a class="t_14 bold">${restaurants.salad.name}</a>
+            </div>
+        </li>
+        <li>
+            <div class="nav_div">
+                <a class="t_14 bold">${restaurants.pizza.name}</a>
+            </div>
+        </li>
+        <li>
+            <div class="nav_div">
+                <a class="t_14 bold">${restaurants.hamburger.name}</a>
+            </div>
+        </li>
+        <li>
+            <div class="nav_div">
+                <a class="t_14 bold">${restaurants.desserts.name}</a>
+            </div>
+        </li>
+        <li>
+            <div class="nav_div">
+                <a class="t_14 bold">${restaurants.drinks.name}</a>
+            </div>
+        </li>
+
+    </ul>
     `;
 }
 
