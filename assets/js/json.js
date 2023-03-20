@@ -59,7 +59,7 @@ let restaurants = {
         "img": `assets/img/drink.jpg`,
         "menu":["Coca Cola 1,0l (Mehrweg)",
                 "Fanta 1,0l (Mehrweg)",
-                "Bcks 0,5l"],
+                "Becks 0,5l"],
         "info":["Coca-Cola steht für einzigartigen Geschmack, Erfrischung und Momente voller Lebensfreude. Die 1,0l PET Mehrwegflasche für die perfekte Erfrischung für jeden Tag - allein oder zu zweit.",
                 "Trinke Fanta. Lebe bunter. Spritzig erfrischend begleitet die originale Fanta Orange jede Lebenssituation und macht jetzt noch mehr Spaß.",
                 ""],
