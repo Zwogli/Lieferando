@@ -41,7 +41,6 @@ function renderMain(section){
                 <h4 class="margin_b_8">${Menu}</h4>
                 <p class="t_14">${Info}</p>
                 <h4 class="margin_t_8">${Price}</h4>
-                
             </div>
             <div class="main_section_icon">
                 <img class="icon_32 cicle_32" src="assets/img/icons/add.svg" alt="add">
