@@ -4,7 +4,7 @@ function generateHTMLHeader(){
 }
 
 function generateHtmlNavbar(){
-    return navbar.innerHTML += /*html*/`
+    return /*html*/`
     ${restaurants.favourit.name}
     ${restaurants.salad.name}
     ${restaurants.pizza.name}

@@ -10,5 +10,5 @@ function initHeader(){
 function initNavbar(){
     let navbar = document.getElementById('navbar');
     navbar.innerHTML = '';
-    generateHtmlNavbar();
+    navbar.innerHTML += generateHtmlNavbar();
 }
