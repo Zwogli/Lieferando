@@ -11,7 +11,7 @@ function generateHtmlNavbar(){
 }
 
 function generateHtmlMain(){
-    return /*hmtl*/`
+    return /*html*/`
     <img src="${restaurants.favourit.img}" alt="favourit img">
     <h3>${restaurants.favourit.name}</h3>
 
