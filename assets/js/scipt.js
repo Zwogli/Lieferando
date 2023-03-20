@@ -17,7 +17,6 @@ function initNavbar(){
 
 function initMain(){
     document.getElementById('main').innerHTML += generateHtmlMain();
-    // generateImgsMain();
 
     // renderFavourit();
     // rednerSalad();

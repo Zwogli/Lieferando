@@ -12,31 +12,22 @@ function generateHtmlNavbar(){
 
 function generateHtmlMain(){
     return /*hmtl*/`
-    <img id="favourit-img">
+    <img src="${restaurants.favourit.img}" alt="favourit img">
     <h3>${restaurants.favourit.name}</h3>
 
-    <img id="salad-img">
+    <img src="${restaurants.salad.img}" alt="salad img">
     <h3>${restaurants.salad.name}</h3>
 
-    <img id="pizza-img">
+    <img src="${restaurants.pizza.img}" alt="pizza img">
     <h3>${restaurants.pizza.name}</h3>
 
-    <img id="hamburger-img">
+    <img src="${restaurants.hamburger.img}" alt="hamburger img">
     <h3>${restaurants.hamburger.name}</h3>
 
-    <img id="desserts-img">
+    <img src="${restaurants.desserts.img}" alt="desserts img">
     <h3>${restaurants.desserts.name}</h3>
 
-    <img id="drinks-img">
+    <img src="${restaurants.drinks.img}" alt="drinks img">
     <h3>${restaurants.drinks.name}</h3>
     `; 
 }
-
-// function generateImgsMain(){
-//     document.getElementById('favourit-img').src = ${restaurants[favourit]["img"]};
-//     document.getElementById('salad-img').src = ${restaurants.favourit["img"]};
-//     document.getElementById('pizza-img').src = ${restaurants.favouritimg["img"]};
-//     document.getElementById('hamburger-img').src = ${restaurants.favourit["img"]};
-//     document.getElementById('desserts-img').src = ${restaurants.favourit["img"]};
-//     document.getElementById('drinks-img').src = ${restaurants.favourit["img"]};
-// }
