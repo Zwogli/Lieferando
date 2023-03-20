@@ -9,8 +9,11 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/icons/favicon_liefercando.ico"/>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/json.js"></script>
+    <script src="assets/js/scipt.js"></script>
+    <script src="assets/js/templates.js"></script>
 </head>
-<body>
+<body onload="render()">
 
     <header>
         <div class="h_menu">
@@ -40,13 +43,13 @@
             <div class="h_restaurant">
                 <div class="h_restaurant_logo">
                     <div class="icon_64">
-                        <img class="h_pizza-logo" src="assets/img/icons/logo_pizza-flizza.png" alt="restaurant pizza flizza">
+                        <img id="h_logo" class="h_pizza-logo" alt="restaurant pizza flizza">
                     </div>
                 </div>
             
                 <div class="h_resturant_card">
                     <div class="h_rest_left">
-                        <h2>Pizza Flizza</h1>
+                        <h2 id="h_rest_name"></h2>
                         <div class="h_rest_evaluation">
                             <div>
                                 <img class="icon_20" src="assets/img/star-2-48.png" alt="star full">
