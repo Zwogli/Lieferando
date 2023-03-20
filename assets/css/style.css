@@ -342,6 +342,13 @@ main {
   border: 1px solid var(--color-bg-icon-aktive);
   border-radius: var(--border-radius-12px);
   display: flex;
+  cursor: pointer;
+}
+.main_section_card:hover {
+  background-color: var(--color-bg-icon);
+}
+.main_section_card:active {
+  background-color: var(--color-bg-icon-aktive);
 }
 
 .main_section_menu {
@@ -358,4 +365,5 @@ main {
   position: relative;
   top: 12px;
   right: 12px;
+  z-index: 5;
 }

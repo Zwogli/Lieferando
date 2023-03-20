@@ -18,6 +18,11 @@ main
     border: 1px solid var(--color-bg-icon-aktive)
     border-radius: var(--border-radius-12px)
     display: flex
+    cursor: pointer
+    &:hover
+        background-color: var(--color-bg-icon)
+    &:active
+        background-color: var(--color-bg-icon-aktive)
 
 .main_section_menu
     min-height: 92px
@@ -32,3 +37,4 @@ main
     position: relative
     top: 12px
     right: 12px
+    z-index: 5
