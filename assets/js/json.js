@@ -17,7 +17,8 @@ let pizzaFlizza = {
     "Italienischer Salat"],
         info:["Wahl aus: mit Essig-Öl-Dressing, mit French-Dressing, mit Joghurt-Dressing, ohne Dressing, mit Essig-Öl-Dressing, extra und mehr.",
     `gemischter Salat mit Putenschinken, Käse und Ei <br> Wahl aus: mit Essig-Öl-Dressing, mit French-Dressing, mit Joghurt-Dressing, ohne Dressing, mit Essig-Öl-Dressing, extra und mehr.`],
-        price: [9.49, 9.49]
+        price: [9.49, 9.49],
+        amounts: [0, 0]
     },
     pizza: {
         name: "Pizza",
@@ -28,7 +29,8 @@ let pizzaFlizza = {
         info:["Wahl aus: Ø 26cm, Ø 30cm, 46cm x 33cm oder 60cm x 40cm.",
     `mit Salami <br> Wahl aus: Ø 26cm, Ø 30cm, 46cm x 33cm oder 60cm x 40cm.`,
     `mit Schinken und Ananas <br> Wahl aus: Ø 26cm, Ø 30cm, 46cm x 33cm oder 60cm x 40cm.`],
-        price: [9.49,10.99,11.99]
+        price: [9.49,10.99,11.99],
+        amounts: [0, 0, 0]
     },
     hamburger:{
         name: "Hamburger",
@@ -39,7 +41,8 @@ let pizzaFlizza = {
         info: ["Wahl aus: 100g oder XXL, 180g.",
     "Wahl aus: 100g oder XXL, 180g.",
     ""],
-        price:[6.99, 6.99, 6.99]
+        price:[6.99, 6.99, 6.99],
+        amounts: [0, 0, 0]
     },
     desserts:{
         name: "Nachtisch",
@@ -48,7 +51,8 @@ let pizzaFlizza = {
     "Spaghetti-Eis"],
         info: ["mit Mascarpone und Biskuit",
     ""],
-        price:[5.99, 4.49]
+        price:[5.99, 4.49],
+        amounts: [0, 0]
     },
     drinks:{
         name:"Getränke",
@@ -62,6 +66,7 @@ let pizzaFlizza = {
         label:["Enthält Koffein (10,00 mg/100 ml), inkl. Pfand (0,15 €), 3,49 €/l, 1l",
     "inkl. Pfand (0,15 €), 3,49 €/l, 1l",
     "4,7% vol, inkl. Pfand (0,08 €), 5,52 €/l, 500ml"],
-        price:[3.49,3.49, 2.8]
+        price:[3.49,3.49, 2.8],
+        amounts: [0, 0, 0]
     }
 }
