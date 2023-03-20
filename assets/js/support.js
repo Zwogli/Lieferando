@@ -8,10 +8,15 @@ function renderFavourit(){
         let favPrice = numberToString(restaurants.favourit.price[i]);
 
         mainFav.innerHTML += /*html*/`
-        <div>
-            <h4>${favMenu}</h4>
-            <p>${favInfo}</p>
-            <h4>${favPrice}</h4>
+        <div class="main_section_card">
+            <div class="main_section_menu">
+                <h4>${favMenu}</h4>
+                <p>${favInfo}</p>
+                <h4>${favPrice}</h4>
+            </div>
+            <div class="main_section_icon">
+                <img class="icon_32 cicle_32" src="assets/img/icons/add.svg" alt="add">
+            </div>
         </div>
         `;
     }

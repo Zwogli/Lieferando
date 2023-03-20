@@ -10,7 +10,7 @@ body {
 :root {
   --color-text-main: #000000;
   --color-text-alert:#CF3102;
-  --color-bg-main:#FFFFFF;
+  --color-bg-main:#fcfcfc;
   --color-bg-second: #FCFCFC;
   --color-bg-icon:#F5F3F1;
   --color-bg-icon-hover:#E0E0E0;
@@ -20,6 +20,7 @@ body {
 }
 
 :root {
+  --border-radius-12px: 12px;
   --padding-0-16px: 0 16px;
 }
 
@@ -309,5 +310,43 @@ nav {
 }
 
 main {
+  padding: var(--padding-0-16px);
   background-color: var(--color-bg-main);
+  box-shadow: 0 5px 5px inset var(--color-bg-icon-hover);
+}
+
+.main_container {
+  padding-top: 32px;
+}
+.main_container .main_section_name {
+  margin-top: 32px;
+}
+.main_container .main_img {
+  height: 88px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--border-radius-12px);
+}
+
+.main_section_card {
+  margin-top: 16px;
+  border: 1px solid var(--color-bg-icon-aktive);
+  border-radius: var(--border-radius-12px);
+  display: flex;
+}
+
+.main_section_menu {
+  min-height: 92px;
+  padding: 12px 56px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_section_icon {
+  height: 32px;
+  position: relative;
+  top: 12px;
+  right: 12px;
 }
