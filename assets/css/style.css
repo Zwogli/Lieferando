@@ -275,6 +275,10 @@ body {
   justify-content: flex-end;
 }
 
+nav {
+  padding: var(--padding-0-16px);
+}
+
 main {
   background-color: var(--color-bg-main);
 }
