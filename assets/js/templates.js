@@ -41,7 +41,7 @@ function generateHtmlMain(){
     <div class="main_container">
         <img class="main_img" src="${restaurants.favourit.img}" alt="favourit img">
         <h3 class="main_section_name">${restaurants.favourit.name}</h3>
-        <div id="main_fav" class="main_section"></div>
+        <div id="main_favourit" class="main_section"></div>
     </div>
     <div class="main_container">
         <img class="main_img" src="${restaurants.salad.img}" alt="salad img">
