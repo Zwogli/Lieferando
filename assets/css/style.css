@@ -166,29 +166,24 @@ body {
 
 .icon_16 {
   height: 16px;
-  width: 16px;
+  aspect-ratio: 1;
 }
-
 .icon_20 {
   height: 20px;
   width: 20px;
 }
-
 .icon_24 {
   height: 24px;
   width: 24px;
 }
-
 .icon_32 {
   height: 32px;
   width: 32px;
 }
-
 .icon_48 {
   height: 48px;
   width: 48px;
 }
-
 .icon_64 {
   height: 64px;
   width: 64px;
@@ -281,6 +276,9 @@ body {
 }
 .h_resturant_card .h_rest_left .h_rest_evaluation {
   margin-top: 16px;
+}
+.h_resturant_card .h_rest_left .h_rest_evaluation .h_rest_prerequisite {
+  gap: 3px;
 }
 .h_resturant_card .h_rest_left .h_rest_evaluation .h_res_delivery {
   margin-top: 8px;
