@@ -1,34 +1,40 @@
 function generateHtmlNavbar(){
+    let favourit    = restaurants[0].favourit.name,
+        salad       = restaurants[0].salad.name,
+        pizza       = restaurants[0].pizza.name,
+        hamburger   = restaurants[0].hamburger.name,
+        desserts    = restaurants[0].desserts.name,
+        drinks      = restaurants[0].drinks.name;
     return /*html*/`
     <ul>
         <li>    
             <div class="nav_div">
-                <a class="t_14 bold">${restaurants.favourit.name}</a>
+                <a class="t_14 bold">${favourit}</a>
             </div>
         </li>
         <li>
             <div class="nav_div">
-                <a class="t_14 bold">${restaurants.salad.name}</a>
+                <a class="t_14 bold">${salad}</a>
             </div>
         </li>
         <li>
             <div class="nav_div">
-                <a class="t_14 bold">${restaurants.pizza.name}</a>
+                <a class="t_14 bold">${pizza}</a>
             </div>
         </li>
         <li>
             <div class="nav_div">
-                <a class="t_14 bold">${restaurants.hamburger.name}</a>
+                <a class="t_14 bold">${hamburger}</a>
             </div>
         </li>
         <li>
             <div class="nav_div">
-                <a class="t_14 bold">${restaurants.desserts.name}</a>
+                <a class="t_14 bold">${desserts}</a>
             </div>
         </li>
         <li>
             <div class="nav_div">
-                <a class="t_14 bold">${restaurants.drinks.name}</a>
+                <a class="t_14 bold">${drinks}</a>
             </div>
         </li>
 
@@ -37,35 +43,41 @@ function generateHtmlNavbar(){
 }
 
 function generateHtmlMain(){
+    let favourit    = restaurants[0].favourit.name,
+        salad       = restaurants[0].salad.name,
+        pizza       = restaurants[0].pizza.name,
+        hamburger   = restaurants[0].hamburger.name,
+        desserts    = restaurants[0].desserts.name,
+        drinks      = restaurants[0].drinks.name;
     return /*html*/`
     <div class="main_container">
-        <img class="main_img" src="${restaurants.favourit.img}" alt="favourit img">
-        <h3 class="main_section_name">${restaurants.favourit.name}</h3>
+        <img class="main_img" src="${restaurants[0].favourit.img}" alt="favourit img">
+        <h3 class="main_section_name">${favourit}</h3>
         <div id="main_favourit" class="main_section"></div>
     </div>
     <div class="main_container">
-        <img class="main_img" src="${restaurants.salad.img}" alt="salad img">
-        <h3 class="main_section_name">${restaurants.salad.name}</h3>
+        <img class="main_img" src="${restaurants[0].salad.img}" alt="salad img">
+        <h3 class="main_section_name">${salad}</h3>
         <div id="main_salad" class="main_section"></div>
     </div>
     <div class="main_container">
-        <img class="main_img" src="${restaurants.pizza.img}" alt="pizza img">
-        <h3 class="main_section_name">${restaurants.pizza.name}</h3>
+        <img class="main_img" src="${restaurants[0].pizza.img}" alt="pizza img">
+        <h3 class="main_section_name">${pizza}</h3>
         <div id="main_pizza" class="main_section"></div>
     </div>
     <div class="main_container">
-        <img class="main_img" src="${restaurants.hamburger.img}" alt="hamburger img">
-        <h3 class="main_section_name">${restaurants.hamburger.name}</h3>
+        <img class="main_img" src="${restaurants[0].hamburger.img}" alt="hamburger img">
+        <h3 class="main_section_name">${hamburger}</h3>
         <div id="main_hamburger" class="main_section"></div>
     </div>
     <div class="main_container">
-        <img class="main_img" src="${restaurants.desserts.img}" alt="desserts img">
-        <h3 class="main_section_name">${restaurants.desserts.name}</h3>
+        <img class="main_img" src="${restaurants[0].desserts.img}" alt="desserts img">
+        <h3 class="main_section_name">${desserts}</h3>
         <div id="main_desserts" class="main_section"></div>
     </div>
     <div class="main_container">
-        <img class="main_img" src="${restaurants.drinks.img}" alt="drinks img">
-        <h3 class="main_section_name">${restaurants.drinks.name}</h3>
+        <img class="main_img" src="${restaurants[0].drinks.img}" alt="drinks img">
+        <h3 class="main_section_name">${drinks}</h3>
         <div id="main_drinks" class="main_section"></div>
     </div>
     `; 

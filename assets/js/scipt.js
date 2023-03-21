@@ -5,8 +5,8 @@ function render(){
 }
 
 function initHeader(){
-    document.getElementById('h_logo').src = `${restaurants.logo}`;
-    document.getElementById('h_rest_name').innerHTML = `${restaurants.name}`;
+    document.getElementById('h_logo').src = `${restaurants[0].logo}`;
+    document.getElementById('h_rest_name').innerHTML = `${restaurants[0].name}`;
 }
 
 function initNavbar(){
