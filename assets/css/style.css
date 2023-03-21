@@ -206,6 +206,10 @@ body {
   margin-top: 8px;
 }
 
+.padding_t_b_12 {
+  padding: 12px 0;
+}
+
 .rotate {
   rotate: 90deg;
 }
@@ -234,12 +238,12 @@ body {
 }
 
 .h_info_restaurant {
-  height: 320px;
+  height: 340px;
 }
 
 .h_img {
   height: 144px;
-  width: 100vw;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -366,4 +370,18 @@ main {
   top: 12px;
   right: 12px;
   z-index: 5;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 12px 16px;
+  background-color: var(--color-border);
+}
+footer .footer_legal {
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+footer .copyright {
+  padding: 8px 0 12px 0;
 }
