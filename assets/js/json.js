@@ -1,4 +1,10 @@
-let	basket      = [],
+let	basket      = {
+		basketMenu		: [],
+		basketInfo		: [],
+		basketPrice		: [],
+		basketAmounts	: []
+	}
+	,
 		restaurants = [
 {
 		logo: `assets/img/icons/logo_pizza-flizza.png`,
