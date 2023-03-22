@@ -164,6 +164,10 @@ body {
   display: none;
 }
 
+.heigth_32 {
+  height: 32px;
+}
+
 .icon_16 {
   height: 16px;
   aspect-ratio: 1;
@@ -225,11 +229,17 @@ body {
   height: 32px;
   padding: 20px 16px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.h_menu .h_menu_right {
+.h_menu_right {
   display: flex;
+}
+.h_menu_select_lang {
+  display: none;
+}
+.h_menu_logo-text {
+  display: none;
 }
 
 .h_info_restaurant {
@@ -290,6 +300,20 @@ body {
   justify-content: flex-end;
 }
 
+@media screen and (min-width: 720px) {
+  .h_menu_logo {
+    display: none;
+  }
+  .h_menu_logo-arrow {
+    display: none;
+  }
+  .h_menu_logo-text {
+    display: flex;
+  }
+  .h_menu_select_lang {
+    display: flex;
+  }
+}
 nav {
   height: 56px;
   background-color: var(--color-bg-main);

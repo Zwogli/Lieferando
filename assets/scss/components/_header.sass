@@ -2,10 +2,14 @@
     height: calc(72px - 40px)
     padding: 20px 16px
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     align-items: center
-    .h_menu_right
+    &_right
         display: flex
+    &_select_lang
+        display: none
+    &_logo-text
+        display: none
 
 
 .h_info_restaurant
@@ -52,3 +56,14 @@
         gap: 8px
         display: flex
         justify-content: flex-end
+
+@media screen and ( min-width: 720px )
+    .h_menu
+        &_logo
+            display: none
+        &_logo-arrow
+            display: none
+        &_logo-text
+            display: flex
+        &_select_lang
+            display: flex   
