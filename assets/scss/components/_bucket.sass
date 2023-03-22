@@ -1,0 +1,24 @@
+.header_nav_main
+  display: flex
+  flex-direction: column
+
+.bucket
+  display: none
+
+@media screen and ( min-width: 1024px )
+  .bucket_main
+    display: flex
+
+  .bucket
+    height: 100vh
+    min-width: 344px
+    padding: 24px 16px
+    position: sticky
+    top: 0
+    right: 0
+    background-color: var(--color-bg-header)
+    // box-shadow: -3px 0 3px var(--color-bg-icon-hover), 0 2px 12px inset var(--color-bg-icon-hover)
+    box-shadow: 0px 4px 6px 0px rgba(27,35,36,0.02),0px 2px 12px -2px rgba(27,35,36,0.08),0px 3px 6px 0px rgba(27,35,36,0.06),
+    z-index: 10
+    display: flex
+  

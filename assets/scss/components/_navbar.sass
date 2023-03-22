@@ -7,10 +7,17 @@ nav
     display: flex
     align-items: center
     z-index: 6
+    box-shadow: 0 5px 5px var(--color-bg-icon-hover)
 
-#navbar
-    overflow-x: scroll
+.nav_section
+    max-width: 960px
+    width: 100%
     display: flex
+    &_icon
+        min-width: 40px
+#navbar
+    display: flex
+    overflow-x: scroll
 
     ul
         display: flex
