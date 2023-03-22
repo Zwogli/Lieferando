@@ -232,8 +232,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.h_menu_left {
+  width: 30%;
+}
+.h_menu_center {
+  width: 60%;
+  text-align: center;
+}
 .h_menu_right {
+  width: 30%;
   display: flex;
+  justify-content: flex-end;
 }
 .h_menu_select_lang {
   display: none;
@@ -302,9 +311,6 @@ body {
 
 @media screen and (min-width: 720px) {
   .h_menu_logo {
-    display: none;
-  }
-  .h_menu_logo-arrow {
     display: none;
   }
   .h_menu_logo-text {
