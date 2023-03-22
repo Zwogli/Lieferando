@@ -7,35 +7,23 @@ function generateHtmlNavbar(){
         drinks      = restaurants[0].drinks.name;
     return /*html*/`
     <ul>
-        <li>    
-            <div class="nav_div">
+        <li class="nav_div">    
                 <a class="t_14 bold">${favourit}</a>
-            </div>
         </li>
-        <li>
-            <div class="nav_div">
+        <li class="nav_div">
                 <a class="t_14 bold">${salad}</a>
-            </div>
         </li>
-        <li>
-            <div class="nav_div">
+        <li class="nav_div">
                 <a class="t_14 bold">${pizza}</a>
-            </div>
         </li>
-        <li>
-            <div class="nav_div">
+        <li class="nav_div">
                 <a class="t_14 bold">${hamburger}</a>
-            </div>
         </li>
-        <li>
-            <div class="nav_div">
+        <li class="nav_div">
                 <a class="t_14 bold">${desserts}</a>
-            </div>
         </li>
-        <li>
-            <div class="nav_div">
+        <li class="nav_div">
                 <a class="t_14 bold">${drinks}</a>
-            </div>
         </li>
 
     </ul>
