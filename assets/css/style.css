@@ -10,8 +10,8 @@ body {
 :root {
   --color-text-main: #000000;
   --color-text-alert:#CF3102;
+  --color-bg-header: #ffffff;
   --color-bg-main:#fcfcfc;
-  --color-bg-second: #FCFCFC;
   --color-bg-icon:#F5F3F1;
   --color-bg-icon-hover:#E0E0E0;
   --color-bg-icon-aktive:#D7D5D4;
@@ -251,10 +251,6 @@ body {
   display: none;
 }
 
-.h_info_restaurant {
-  height: 340px;
-}
-
 .h_img {
   height: 144px;
   width: 100%;
@@ -319,10 +315,13 @@ body {
   .h_menu_select_lang {
     display: flex;
   }
+  .h_img {
+    height: 320px;
+  }
 }
 nav {
   height: 56px;
-  background-color: var(--color-bg-main);
+  background-color: var(--color-bg-header);
   padding: var(--padding-0-16px);
   position: sticky;
   top: 0;
