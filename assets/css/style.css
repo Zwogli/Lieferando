@@ -398,7 +398,8 @@ main {
 .main_container .main_section_name {
   margin-top: 32px;
 }
-.main_container .main_img {
+
+.main_img {
   height: 88px;
   width: 100%;
   -o-object-fit: cover;
@@ -437,6 +438,11 @@ main {
   z-index: 5;
 }
 
+@media screen and (min-width: 720px) {
+  .main_img {
+    height: 152px;
+  }
+}
 footer {
   padding: 12px 16px;
   background-color: var(--color-border);
