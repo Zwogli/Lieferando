@@ -13,9 +13,22 @@ function renderMain(section){
 		for (let i = 0; i < sectionMenu.length; i++) {
 				let menu = sectionMenu[i];
 				let info = sectionInfo[i];
-				let price = numberToString(sectionPrice[i]);
+				let price = sectionPrice[i]
+				let priceString = numberToString(sectionPrice[i]);
 				// let label = restaurants[`${section}`].label[i];
 
-				mainContainer.innerHTML += generateHtmlCards(menu, info, price);
+				mainContainer.innerHTML += generateHtmlCards(menu, info, price, priceString, i);
 		}
+}
+
+function addToBasket(menu, info, price){
+	if(basket.basketMenu.includes(menu)){                   //includes: checked all Items output true or false
+			let positionMenu = basket.basketMenu.indexOf(menu); //indexOf:  returns index of found item 
+			basket.basketAmounts[positionMenu]++;
+	}else{
+			basket.basketMenu.push(menu);
+			basket.basketInfo.push(info);
+			basket.basketPrice.push(price);
+			basket.basketAmounts.push(1);
+	}
 }
