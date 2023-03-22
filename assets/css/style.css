@@ -235,6 +235,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 3px 10px var(--color-bg-icon-aktive);
+  position: relative;
+  z-index: 15;
 }
 .h_menu_left {
   width: 30%;
@@ -260,6 +263,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 16;
 }
 
 .h_restaurant {
@@ -342,7 +346,7 @@ nav {
   top: 0;
   display: flex;
   align-items: center;
-  z-index: 6;
+  z-index: 10;
   box-shadow: 0 5px 5px var(--color-bg-icon-hover);
 }
 
