@@ -464,6 +464,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   footer {
+    padding: 16px 32px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
