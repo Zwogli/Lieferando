@@ -167,6 +167,11 @@ body {
   cursor: pointer;
 }
 
+.d-flex-spabeet {
+  display: flex;
+  justify-content: space-between;
+}
+
 .d-none {
   display: none;
 }
@@ -540,6 +545,15 @@ footer {
 .basket_edit {
   display: flex;
   gap: 16px;
+  padding: 8px 0 16px 0;
+}
+.basket_invoice {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.basket_btn {
+  margin-top: 16px;
 }
 
 .basket_content {

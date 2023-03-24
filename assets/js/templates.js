@@ -96,7 +96,7 @@ function generateHtmlEmptyBasket(){
     `;
 }
 
-function generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice){
+function generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, basketPriceString, i){
     return /*html*/`
     <div class="basket_content">
         <div class="basket_card">
@@ -107,14 +107,14 @@ function generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice){
                 <p>${basketInfo}</p>
             </div>
 
-            <p class="basket_card_price">${basketPrice}</p>
+            <p class="basket_card_price">${basketPriceString}</p>
         </div>
 
         <div class="basket_edit">
-            <div class="cicle_32 center effekt">
+            <div onclick="subFromBasket('${basketMenu}', '${basketInfo}', ${basketPrice}, ${i})" class="cicle_32 center effekt">
                 <img class="icon_32" src="assets/img/icons/remove.svg" alt="remove">
             </div>
-            <div class="cicle_32 center effekt">
+            <div onclick="addToBasket('${basketMenu}', '${basketInfo}', ${basketPrice})"  class="cicle_32 center effekt">
                 <img class="icon_32" src="assets/img/icons/add.svg" alt="add">
             </div>
         </div>
@@ -124,22 +124,22 @@ function generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice){
 
 function generateInvoiceBasket(subtotal, deliveryCost, FullPrice){
     return /*html*/`
-     <div class="invoice">
+     <div class="basket_invoice">
         <div>
-            <div>
+            <div class="d-flex-spabeet">
                 <span>Zwischensumme</span>
                 <span>${subtotal}</span>
             </div>
-            <div>
+            <div class="d-flex-spabeet">
                 <span>Lieferkosten</span>
                 <span>${deliveryCost}</span>
             </div>
-            <div>
+            <div class="d-flex-spabeet">
                 <span><b>Gesamt</b></span>
                 <span>${FullPrice}</span>
             </div>
         </div>
-        <button>Bezahlen</button>
+        <button class="basket_btn">Bezahlen ${FullPrice}</button>
     </div>
     `;
 }
