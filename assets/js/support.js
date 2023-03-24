@@ -35,19 +35,25 @@ function addToBasket(menu, info, price){
 }
 
 function renderBasket(){
-	let bucketList = document.getElementById('bucket-list');
-	bucketList.innerHTML = '';
+	let basketList = document.getElementById('basket-list');
+	basketList.innerHTML = '';
 	for (let i = 0; i < basket.basketMenus.length; i++) {
 		let basketMenu 		= basket.basketMenus[i],
 				basketInfo 		= basket.basketInfos[i],
 				basketPrice		= basket.basketPrices[i],
 				basketAmount	=	basket.basketAmounts[i];
 		
-		bucketList.innerHTML += /*html*/`
-		<h4>${basketAmount}</h4>
-		<h4>${basketMenu}</h4>
-		<h4>${basketPrice}</h4>
-		<p>${basketInfo}</p>
+			basketList.innerHTML += /*html*/`
+		<div>
+			<h4>${basketAmount}</h4>
+
+			<div>
+				<h4>${basketMenu}</h4>
+				<p>${basketInfo}</p>
+			</div>
+
+			<h4>${basketPrice}</h4>
+		</div>
 		`;
 	}
 }

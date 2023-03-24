@@ -27,10 +27,10 @@ function initMain(){
 }
 
 function initBasket(){
-    let bucketList = document.getElementById('bucket-list');
-    bucketList.innerHTML = ``;
+    let basketList = document.getElementById('basket-list');
+    basketList.innerHTML = ``;
     if(basket.basketMenus.length == 0){
-        bucketList.innerHTML = generateHtmlEmptyBasket();
+        basketList.innerHTML = generateHtmlEmptyBasket();
     }else{
         renderBasket();
     }
