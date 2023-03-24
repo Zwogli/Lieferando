@@ -492,7 +492,7 @@ footer {
   flex-direction: column;
 }
 
-.bucket {
+.basket {
   display: none;
   height: 100vh;
   min-width: 312px;
@@ -510,14 +510,14 @@ footer {
   text-align: center;
 }
 
-.bucket-list_empty {
+.basket-list_empty {
   padding: 80px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.bucket-list_empty p {
+.basket-list_empty p {
   text-align: center;
 }
 
@@ -525,7 +525,7 @@ footer {
   .bucket_main {
     display: flex;
   }
-  .bucket {
+  .basket {
     display: flex;
   }
 }

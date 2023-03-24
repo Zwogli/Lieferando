@@ -86,9 +86,9 @@ function generateHtmlCards(menu, info, price, priceString){
     `;
 }
 
-function generateHtmlEmptyBucket(){
+function generateHtmlEmptyBasket(){
     return /*html*/`
-    <div class="bucket-list_empty">
+    <div class="basket-list_empty">
         <img src="assets/img/icons/local_mall.svg" alt="basket">
         <h3 class="margin_t_8">Fülle deinen Warenkorb</h3>
         <p class="margin_t_8">Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>

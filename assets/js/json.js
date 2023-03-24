@@ -3,8 +3,7 @@ let	basket      = {
 		basketInfos		: [],
 		basketPrices		: [],
 		basketAmounts	: []
-	}
-	,
+	},
 		restaurants = [
 {
 		logo: `assets/img/icons/logo_pizza-flizza.png`,
