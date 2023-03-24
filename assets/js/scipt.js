@@ -2,6 +2,7 @@ function render(){
     initHeader();
     initNavbar();
     initMain();
+    initBucket();
 }
 
 function initHeader(){
@@ -23,4 +24,12 @@ function initMain(){
     renderMain("hamburger");
     renderMain("desserts");
     renderMain("drinks");
+}
+
+function initBucket(){
+    let bucketList = document.getElementById('bucket-list');
+    bucketList.innerHTML = ``;
+    if(basket.basketMenu.length == 0){
+        bucketList.innerHTML = generateHtmlEmptyBucket();
+    }
 }
