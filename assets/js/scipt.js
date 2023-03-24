@@ -29,7 +29,9 @@ function initMain(){
 function initBucket(){
     let bucketList = document.getElementById('bucket-list');
     bucketList.innerHTML = ``;
-    if(basket.basketMenu.length == 0){
+    if(basket.basketMenus.length == 0){
         bucketList.innerHTML = generateHtmlEmptyBucket();
+    }else{
+        renderBucket();
     }
 }

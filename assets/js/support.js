@@ -22,13 +22,26 @@ function renderMain(section){
 }
 
 function addToBasket(menu, info, price){
-	if(basket.basketMenu.includes(menu)){                   //includes: checked all Items output true or false
-			let positionMenu = basket.basketMenu.indexOf(menu); //indexOf:  returns index of found item 
+	if(basket.bucketMenus.includes(menu)){                   //includes: checked all Items output true or false
+			let positionMenu = basket.bucketMenus.indexOf(menu); //indexOf:  returns index of found item 
 			basket.basketAmounts[positionMenu]++;
 	}else{
-			basket.basketMenu.push(menu);
-			basket.basketInfo.push(info);
-			basket.basketPrice.push(price);
+			basket.bucketMenus.push(menu);
+			basket.basketInfos.push(info);
+			basket.basketPrices.push(price);
 			basket.basketAmounts.push(1);
+	}
+	initBucket();
+}
+
+function renderBucket(){
+	let bucketList = document.getElementById('bucket-list');
+	bucketList.innerHTML = '';
+	for (let i = 0; i < basket.bucketMenus.length; i++) {
+		let basketMenu = basket.bucketMenus[i];
+		
+		bucketList.innerHtml = /*html*/`
+		
+		`;
 	}
 }
