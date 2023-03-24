@@ -27,8 +27,10 @@ function initMain(){
 }
 
 function initBasket(){
-    let basketList = document.getElementById('basket-list');
-    basketList.innerHTML = ``;
+    let basketList = document.getElementById('basket-list'),
+        basketInvoice = document.getElementById('basket-invoice');
+    basketList.innerHTML    = ``;
+    basketInvoice.innerHTML = ``;
     if(basket.basketMenus.length == 0){
         basketList.innerHTML = generateHtmlEmptyBasket();
     }else{
