@@ -1,7 +1,7 @@
 let	basket      = {
 		basketMenus		: [],
 		basketInfos		: [],
-		basketPrices		: [],
+		basketPrices	: [],
 		basketAmounts	: []
 	},
 		restaurants = [

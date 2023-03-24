@@ -21,7 +21,8 @@ function renderMain(section){
 		}
 }
 
-function addToBasket(menu, info, price){
+// function addToBasket(menu, info, price){
+	const addToBasket = (menu, info, price) => {						//=> = function, const checked functionname
 	if(basket.basketMenus.includes(menu)){                   //includes: checked all Items output true or false
 			let positionMenu = basket.basketMenus.indexOf(menu); //indexOf:  returns index of found item 
 			basket.basketAmounts[positionMenu]++;
@@ -35,37 +36,28 @@ function addToBasket(menu, info, price){
 }
 
 function renderBasket(){
-	let basketList = document.getElementById('basket-list');
-	basketList.innerHTML = '';
+	let basketList 		= document.getElementById('basket-list'),
+			basketInvoice	= document.getElementById('basket-invoice'),
+			result				= 0;
+	basketList.innerHTML 		= '';
+	basketInvoice.innerHTML = '';
+
 	for (let i = 0; i < basket.basketMenus.length; i++) {
 		let basketMenu 		= basket.basketMenus[i],
 				basketInfo 		= basket.basketInfos[i],
-				basketPrice		= numberToString(basket.basketPrices[i]),
-				basketAmount	=	basket.basketAmounts[i];
+				basketAmount	=	basket.basketAmounts[i],
+				basketPrice		= basket.basketPrices[i],
+				deliveryCosts				= 1.9,
+				total		= basketPrice * basketAmount,
+				basketPriceString 	= numberToString(basketPrice * basketAmount),
+				deliveryCostsString = numberToString(deliveryCosts);
+				
+				result += total;
+
+		let	subtotal 	= numberToString(result),
+				FullPrice	= numberToString(result + deliveryCosts);
 		
-		basketList.innerHTML += /*html*/`
-		<div class="basket_content">
-			<div class="basket_card">
-				<h4>${basketAmount}</h4>
-	
-				<div>
-					<h4>${basketMenu}</h4>
-					<p>${basketInfo}</p>
-				</div>
-	
-				<p class="basket_card_price">${basketPrice}</p>
-			</div>
-
-			<div class="basket_edit">
-				<div class="cicle_32 center effekt">
-					<img class="icon_32" src="assets/img/icons/remove.svg" alt="remove">
-				</div>
-				<div class="cicle_32 center effekt">
-					<img class="icon_32" src="assets/img/icons/add.svg" alt="add">
-				</div>
-			</div>
-
-		</div>
-		`;
+		basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPriceString);
+		basketInvoice.innerHTML	=		generateInvoiceBasket(subtotal, deliveryCostsString, FullPrice);
 	}
 }

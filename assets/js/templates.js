@@ -95,3 +95,51 @@ function generateHtmlEmptyBasket(){
     </div>
     `;
 }
+
+function generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice){
+    return /*html*/`
+    <div class="basket_content">
+        <div class="basket_card">
+            <h4>${basketAmount}</h4>
+
+            <div>
+                <h4>${basketMenu}</h4>
+                <p>${basketInfo}</p>
+            </div>
+
+            <p class="basket_card_price">${basketPrice}</p>
+        </div>
+
+        <div class="basket_edit">
+            <div class="cicle_32 center effekt">
+                <img class="icon_32" src="assets/img/icons/remove.svg" alt="remove">
+            </div>
+            <div class="cicle_32 center effekt">
+                <img class="icon_32" src="assets/img/icons/add.svg" alt="add">
+            </div>
+        </div>
+    </div>
+    `;
+}
+
+function generateInvoiceBasket(subtotal, deliveryCost, FullPrice){
+    return /*html*/`
+     <div class="invoice">
+        <div>
+            <div>
+                <span>Zwischensumme</span>
+                <span>${subtotal}</span>
+            </div>
+            <div>
+                <span>Lieferkosten</span>
+                <span>${deliveryCost}</span>
+            </div>
+            <div>
+                <span><b>Gesamt</b></span>
+                <span>${FullPrice}</span>
+            </div>
+        </div>
+        <button>Bezahlen</button>
+    </div>
+    `;
+}
