@@ -11,10 +11,10 @@ function renderMain(section){
 		mainContainer.innerHTML = '';
 
 		for (let i = 0; i < sectionMenu.length; i++) {
-				let menu = sectionMenu[i];
-				let info = sectionInfo[i];
-				let price = sectionPrice[i]
-				let priceString = numberToString(sectionPrice[i]);
+				let menu 				= sectionMenu[i],
+						info 				= sectionInfo[i],
+						price 			= sectionPrice[i],
+						priceString = numberToString(sectionPrice[i]);
 				// let label = restaurants[`${section}`].label[i];
 
 				mainContainer.innerHTML += generateHtmlCards(menu, info, price, priceString, i);
