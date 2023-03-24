@@ -40,19 +40,31 @@ function renderBasket(){
 	for (let i = 0; i < basket.basketMenus.length; i++) {
 		let basketMenu 		= basket.basketMenus[i],
 				basketInfo 		= basket.basketInfos[i],
-				basketPrice		= basket.basketPrices[i],
+				basketPrice		= numberToString(basket.basketPrices[i]),
 				basketAmount	=	basket.basketAmounts[i];
 		
-			basketList.innerHTML += /*html*/`
-		<div>
-			<h4>${basketAmount}</h4>
-
-			<div>
-				<h4>${basketMenu}</h4>
-				<p>${basketInfo}</p>
+		basketList.innerHTML += /*html*/`
+		<div class="basket_content">
+			<div class="basket_card">
+				<h4>${basketAmount}</h4>
+	
+				<div>
+					<h4>${basketMenu}</h4>
+					<p>${basketInfo}</p>
+				</div>
+	
+				<p class="basket_card_price">${basketPrice}</p>
 			</div>
 
-			<h4>${basketPrice}</h4>
+			<div class="basket_edit">
+				<div class="cicle_32 center">
+					<img class="icon_32" src="assets/img/icons/remove.svg" alt="remove">
+				</div>
+				<div class="cicle_32 center">
+					<img class="icon_32" src="assets/img/icons/add.svg" alt="add">
+				</div>
+			</div>
+
 		</div>
 		`;
 	}
