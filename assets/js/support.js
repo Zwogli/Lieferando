@@ -57,10 +57,10 @@ function renderBasket(){
 			</div>
 
 			<div class="basket_edit">
-				<div class="cicle_32 center">
+				<div class="cicle_32 center effekt">
 					<img class="icon_32" src="assets/img/icons/remove.svg" alt="remove">
 				</div>
-				<div class="cicle_32 center">
+				<div class="cicle_32 center effekt">
 					<img class="icon_32" src="assets/img/icons/add.svg" alt="add">
 				</div>
 			</div>

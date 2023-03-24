@@ -6,18 +6,36 @@
     align-items: center
 .cicle
     border-radius: 50%
-.cicle_32
-    min-height: 32px
-    min-width: 32px
-    border-radius: 50%
-    background-color: var(--color-bg-icon) 
-.cicle_48
-    height: 48px
-    width: 48px
-    border-radius: 50%
-    background-color: var(--color-bg-icon) 
+    &_32
+        min-height: 32px
+        height: 32px
+        min-width: 32px
+        width: 32px
+        border-radius: 50%
+        background-color: var(--color-bg-icon) 
+    &_48
+        height: 48px
+        width: 48px
+        border-radius: 50%
+        background-color: var(--color-bg-icon)
+.cursor
+    &_default
+        cursor: default
+    &_pointer
+        cursor: pointer
 .d-none
     display: none
+.effekt
+    &:hover
+        background-color: var(--color-bg-icon-hover)
+        cursor: pointer
+    &:active
+        background-color: var(--color-bg-icon-aktive)
+        cursor: pointer
+.effekt_t_deco-underline
+    &:hover
+        cursor: pointer
+        text-decoration: underline
 .heigth_32
     height: 32px
 .icon
@@ -40,16 +58,18 @@
     &_64
         height: 64px
         width: 64px
-.margin_b_8
-    margin-bottom: 8px
-.margin_r_8
-    margin-right: 8px
-.margin_t_8
-    margin-top: 8px
-.padding_t_b_12
-    padding: 12px 0
-.padding_8_12px
-    padding: 8px 12px
+.margin
+    &_b_8
+        margin-bottom: 8px
+    &_r_8
+        margin-right: 8px
+    &_t_8
+        margin-top: 8px
+.padding
+    &_t_b_12
+        padding: 12px 0
+    &_8_12px
+        padding: 8px 12px
 .rotate
     rotate: 90deg
 .t_14
@@ -58,3 +78,6 @@
     color: var(--color-text-alert)
 .t_underline
     text-decoration: underline
+    cursor: pointer
+    &:hover
+        text-decoration: none
