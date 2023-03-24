@@ -22,26 +22,32 @@ function renderMain(section){
 }
 
 function addToBasket(menu, info, price){
-	if(basket.bucketMenus.includes(menu)){                   //includes: checked all Items output true or false
-			let positionMenu = basket.bucketMenus.indexOf(menu); //indexOf:  returns index of found item 
+	if(basket.basketMenus.includes(menu)){                   //includes: checked all Items output true or false
+			let positionMenu = basket.basketMenus.indexOf(menu); //indexOf:  returns index of found item 
 			basket.basketAmounts[positionMenu]++;
 	}else{
-			basket.bucketMenus.push(menu);
+			basket.basketMenus.push(menu);
 			basket.basketInfos.push(info);
 			basket.basketPrices.push(price);
 			basket.basketAmounts.push(1);
 	}
-	initBucket();
+	initBasket();
 }
 
-function renderBucket(){
+function renderBasket(){
 	let bucketList = document.getElementById('bucket-list');
 	bucketList.innerHTML = '';
-	for (let i = 0; i < basket.bucketMenus.length; i++) {
-		let basketMenu = basket.bucketMenus[i];
+	for (let i = 0; i < basket.basketMenus.length; i++) {
+		let basketMenu 		= basket.basketMenus[i],
+				basketInfo 		= basket.basketInfos[i],
+				basketPrice		= basket.basketPrices[i],
+				basketAmount	=	basket.basketAmounts[i];
 		
-		bucketList.innerHtml = /*html*/`
-		
+		bucketList.innerHTML += /*html*/`
+		<h4>${basketAmount}</h4>
+		<h4>${basketMenu}</h4>
+		<h4>${basketPrice}</h4>
+		<p>${basketInfo}</p>
 		`;
 	}
 }
