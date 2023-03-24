@@ -35,6 +35,18 @@ function renderMain(section){
 	initBasket();
 }
 
+function subFromBasket(menu, info, price, i) {
+	if (basket.basketAmounts[i] == 1) {
+		basket.basketMenus.splice(i, 1);
+		basket.basketInfos.splice(i, 1);
+    basket.basketPrices.splice(i, 1);
+    basket.basketAmounts.splice(i, 1);
+	} else {
+		basket.basketAmounts[i]--;
+	}
+	initBasket();
+}
+
 function renderBasket(){
 	let basketList 		= document.getElementById('basket-list'),
 			basketInvoice	= document.getElementById('basket-invoice'),
@@ -48,7 +60,7 @@ function renderBasket(){
 				basketAmount	=	basket.basketAmounts[i],
 				basketPrice		= basket.basketPrices[i],
 				deliveryCosts				= 1.9,
-				total		= basketPrice * basketAmount,
+				total								= basketPrice * basketAmount,
 				basketPriceString 	= numberToString(basketPrice * basketAmount),
 				deliveryCostsString = numberToString(deliveryCosts);
 				
@@ -57,7 +69,7 @@ function renderBasket(){
 		let	subtotal 	= numberToString(result),
 				FullPrice	= numberToString(result + deliveryCosts);
 		
-		basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPriceString);
+		basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, basketPriceString, i);
 		basketInvoice.innerHTML	=		generateInvoiceBasket(subtotal, deliveryCostsString, FullPrice);
 	}
 }
