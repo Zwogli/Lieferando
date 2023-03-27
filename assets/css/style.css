@@ -444,10 +444,6 @@ nav {
 .navbar_btn:hover {
   background-color: var(--color-bg-icon);
 }
-.navbar_btn:focus {
-  background-color: var(--color-text-main);
-  color: var(--color-bg-header);
-}
 
 @media screen and (min-width: 720px) {
   #navbar {
@@ -476,6 +472,7 @@ main {
 
 .main_container {
   padding-top: 32px;
+  scroll-margin-top: 30px;
 }
 .main_container .main_section_name {
   margin-top: 32px;
@@ -668,6 +665,8 @@ footer {
     display: flex;
     height: calc(100vh - 50px);
     min-width: 312px;
+    width: 312px;
+    max-width: 312px;
     padding: 24px 16px;
     position: sticky;
     top: 0;
