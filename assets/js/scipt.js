@@ -36,4 +36,15 @@ function initBasket(){
     }else{
         renderBasket();
     }
+    renderBasketBtnMobile();
+}
+
+const renderBasketBtnMobile = () => {
+    if(basket.basketMenus.length == 0){
+        document.getElementById('footer').classList.remove('footer_margin_btn');
+        document.getElementById('basket_mobile_btn_section').classList.add('d-none');
+    }else{
+        document.getElementById('footer').classList.add('footer_margin_btn');
+        document.getElementById('basket_mobile_btn_section').classList.remove('d-none');
+    }
 }

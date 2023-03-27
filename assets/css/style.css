@@ -585,9 +585,9 @@ footer {
   padding: 8px 8px 32px 8px;
   background-color: var(--color-bg-header);
   border: 1px solid var(--color-bg-icon-aktive);
-  display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .footer_margin_btn {
@@ -605,6 +605,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  .footer_margin_btn {
+    margin-bottom: 0;
+  }
+  .open_Basket {
+    display: none;
+  }
   .bucket_main {
     display: flex;
   }
