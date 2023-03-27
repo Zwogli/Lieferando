@@ -72,6 +72,6 @@ function renderBasket(){
 		
 		basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, basketPriceString, i);
 		basketInvoice.innerHTML	=		generateInvoiceBasket(subtotal, deliveryCostsString, FullPrice);
-		basketMobile.innerHTML = generateBasketMobileTitle(FullPrice);
+		basketMobile.innerHTML 	= 	generateBasketMobileTitle(FullPrice);
 	}
 }
