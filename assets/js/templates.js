@@ -126,20 +126,20 @@ function generateInvoiceBasket(subtotal, deliveryCost, FullPrice){
     return /*html*/`
      <div class="basket_invoice">
         <div>
-            <div class="d-flex-spabeet">
+            <div class="d-flex-spabeet margin_b_8">
                 <span>Zwischensumme</span>
                 <span>${subtotal}</span>
             </div>
-            <div class="d-flex-spabeet">
+            <div class="d-flex-spabeet margin_b_8">
                 <span>Lieferkosten</span>
                 <span>${deliveryCost}</span>
             </div>
-            <div class="d-flex-spabeet">
+            <div class="d-flex-spabeet margin_b_8">
                 <span><b>Gesamt</b></span>
                 <span>${FullPrice}</span>
             </div>
         </div>
-        <button class="basket_btn">Bezahlen ${FullPrice}</button>
+        <button class="basket_btn"><b>Bezahlen (${FullPrice})</b></button>
     </div>
     `;
 }

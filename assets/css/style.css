@@ -15,12 +15,13 @@ body {
   --color-bg-icon:#F5F3F1;
   --color-bg-icon-hover:#E0E0E0;
   --color-bg-icon-aktive:#D7D5D4;
-  --color-btn:#262626;
+  --color-btn:#f36805;
   --color-border:#efedea;
 }
 
 :root {
   --border-radius-12px: 12px;
+  --border-radius-50: 50rem;
   --padding-0-16px: 0 16px;
 }
 
@@ -573,6 +574,15 @@ footer {
 }
 .basket-list_empty p {
   text-align: center;
+}
+
+.basket_btn {
+  height: 48px;
+  background-color: var(--color-btn);
+  font-size: 20px;
+  color: var(--color-bg-header);
+  border: none;
+  border-radius: var(--border-radius-50);
 }
 
 @media screen and (min-width: 1024px) {
