@@ -55,10 +55,10 @@ function renderBasket(){
 	basketInvoice.innerHTML = '';
 
 	for (let i = 0; i < basket.basketMenus.length; i++) {
-		let basketMenu 		= basket.basketMenus[i],
-				basketInfo 		= basket.basketInfos[i],
-				basketAmount	=	basket.basketAmounts[i],
-				basketPrice		= basket.basketPrices[i],
+		let basketMenu 					= basket.basketMenus[i],
+				basketInfo 					= basket.basketInfos[i],
+				basketAmount				=	basket.basketAmounts[i],
+				basketPrice					= basket.basketPrices[i],
 				deliveryCosts				= 1.9,
 				total								= basketPrice * basketAmount,
 				basketPriceString 	= numberToString(basketPrice * basketAmount),
