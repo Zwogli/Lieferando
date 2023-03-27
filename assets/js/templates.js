@@ -145,3 +145,7 @@ function generateInvoiceBasket(subtotal, deliveryCost, FullPrice){
     </div>
     `;
 }
+
+function generateBasketMobileTitle(FullPrice){
+    return `<b>Warenkorb (${FullPrice})</b>`;
+}

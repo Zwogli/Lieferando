@@ -50,6 +50,7 @@ function subFromBasket(menu, info, price, i) {
 function renderBasket(){
 	let basketList 		= document.getElementById('basket-list'),
 			basketInvoice	= document.getElementById('basket-invoice'),
+			basketMobile	= document.getElementById('basket_mobile_btn'),
 			result				= 0;
 	basketList.innerHTML 		= '';
 	basketInvoice.innerHTML = '';
@@ -71,6 +72,6 @@ function renderBasket(){
 		
 		basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, basketPriceString, i);
 		basketInvoice.innerHTML	=		generateInvoiceBasket(subtotal, deliveryCostsString, FullPrice);
-		document.getElementById('basket_mobile_btn').innerHTML = `<b>Warenkorb (${FullPrice})</b>`;
+		basketMobile.innerHTML = generateBasketMobileTitle(FullPrice);
 	}
 }
