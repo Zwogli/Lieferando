@@ -100,11 +100,13 @@ function generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, b
     return /*html*/`
     <div class="basket_content">
         <div class="basket_card">
-            <h4>${basketAmount}</h4>
-
-            <div>
-                <h4>${basketMenu}</h4>
-                <p>${basketInfo}</p>
+            <div class="basket_card_left">
+                <h4>${basketAmount}</h4>
+    
+                <div>
+                    <h4>${basketMenu}</h4>
+                    <p>${basketInfo}</p>
+                </div>
             </div>
 
             <p class="basket_card_price">${basketPriceString}</p>

@@ -48,3 +48,9 @@ const renderBasketBtnMobile = () => {
         document.getElementById('basket_mobile_btn_section').classList.remove('d-none');
     }
 }
+
+const openBasket = () => {
+    let basketMobile        = document.getElementById('basket_mobile');
+
+    basketMobile.classList.toggle("d-none");
+}

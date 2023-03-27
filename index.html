@@ -112,9 +112,14 @@
             </main> 
         </div>
         
-        <aside class="basket">
-            <h3 class="title">Warenkorb</h3>
-            <div id="basket-list"></div>
+        <aside id="basket_mobile" class="basket d-none">
+            <div class="basket_mobile_content">
+                <div id="basket_title">
+                    <h3 class="title">Warenkorb</h3>
+                    <h3 onclick="openBasket()" class="basket_title_close">X</h3>
+                </div>
+                <div id="basket-list"></div>
+            </div>
             <div id="basket-invoice"></div>
         </aside>
     </section>
