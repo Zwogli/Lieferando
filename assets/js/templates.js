@@ -8,22 +8,22 @@ function generateHtmlNavbar(){
     return /*html*/`
     <ul>
         <li class="nav_div">    
-                <a class="t_14 bold">${favourit}</a>
+                <button class="navbar_btn"><a class="navbar_btn_a href-none t_14 bold" href="#main_container-favourit">${favourit}</a></button>
         </li>
         <li class="nav_div">
-                <a class="t_14 bold">${salad}</a>
+                <button class="navbar_btn"><a class="navbar_btn_a href-none t_14 bold" href="#main_container-salad">${salad}</a></button>
         </li>
         <li class="nav_div">
-                <a class="t_14 bold">${pizza}</a>
+                <button class="navbar_btn"><a class="navbar_btn_a href-none t_14 bold" href="#main_container-pizza">${pizza}</a></button>
         </li>
         <li class="nav_div">
-                <a class="t_14 bold">${hamburger}</a>
+                <button class="navbar_btn"><a class="navbar_btn_a href-none t_14 bold" href="#main_container-hamburger">${hamburger}</a></button>
         </li>
         <li class="nav_div">
-                <a class="t_14 bold">${desserts}</a>
+                <button class="navbar_btn"><a class="navbar_btn_a href-none t_14 bold" href="#main_container-desserts">${desserts}</a></button>
         </li>
         <li class="nav_div">
-                <a class="t_14 bold">${drinks}</a>
+                <button class="navbar_btn"><a class="navbar_btn_a href-none t_14 bold" href="#main_container-drinks">${drinks}</a></button>
         </li>
 
     </ul>
@@ -38,32 +38,32 @@ function generateHtmlMain(){
         desserts    = restaurants[0].desserts.name,
         drinks      = restaurants[0].drinks.name;
     return /*html*/`
-    <div class="main_container">
+    <div id="main_container-favourit" class="main_container">
         <img class="main_img" src="${restaurants[0].favourit.img}" alt="favourit img">
         <h3 class="main_section_name">${favourit}</h3>
         <div id="main_favourit" class="main_section"></div>
     </div>
-    <div class="main_container">
+    <div id="main_container-salad" class="main_container">
         <img class="main_img" src="${restaurants[0].salad.img}" alt="salad img">
         <h3 class="main_section_name">${salad}</h3>
         <div id="main_salad" class="main_section"></div>
     </div>
-    <div class="main_container">
+    <div id="main_container-pizza" class="main_container">
         <img class="main_img" src="${restaurants[0].pizza.img}" alt="pizza img">
         <h3 class="main_section_name">${pizza}</h3>
         <div id="main_pizza" class="main_section"></div>
     </div>
-    <div class="main_container">
+    <div id="main_container-hamburger" class="main_container">
         <img class="main_img" src="${restaurants[0].hamburger.img}" alt="hamburger img">
         <h3 class="main_section_name">${hamburger}</h3>
         <div id="main_hamburger" class="main_section"></div>
     </div>
-    <div class="main_container">
+    <div id="main_container-desserts" class="main_container">
         <img class="main_img" src="${restaurants[0].desserts.img}" alt="desserts img">
         <h3 class="main_section_name">${desserts}</h3>
         <div id="main_desserts" class="main_section"></div>
     </div>
-    <div class="main_container">
+    <div id="main_container-drinks" class="main_container">
         <img class="main_img" src="${restaurants[0].drinks.img}" alt="drinks img">
         <h3 class="main_section_name">${drinks}</h3>
         <div id="main_drinks" class="main_section"></div>
