@@ -50,7 +50,9 @@ const renderBasketBtnMobile = () => {
 }
 
 const openBasket = () => {
-    let basketMobile        = document.getElementById('basket_mobile');
+    let basketMobile = document.getElementById('basket_mobile');
 
     basketMobile.classList.toggle("d-none");
+    basketMobile.classList.toggle("d-flex");
+    document.getElementById('body').classList.toggle("overflow");
 }
