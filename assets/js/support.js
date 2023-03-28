@@ -47,31 +47,24 @@ function subFromBasket(menu, info, price, i) {
 	initBasket();
 }
 
-function renderBasket(){
-	let basketList 		= document.getElementById('basket-list'),
-			basketInvoice	= document.getElementById('basket-invoice'),
-			basketMobile	= document.getElementById('basket_mobile_btn'),
-			result				= 0;
-	basketList.innerHTML 		= '';
-	basketInvoice.innerHTML = '';
 
-	for (let i = 0; i < basket.basketMenus.length; i++) {
-		let basketMenu 					= basket.basketMenus[i],
-				basketInfo 					= basket.basketInfos[i],
-				basketAmount				=	basket.basketAmounts[i],
-				basketPrice					= basket.basketPrices[i],
-				deliveryCosts				= 1.9,
-				total								= basketPrice * basketAmount,
-				basketPriceString 	= numberToString(basketPrice * basketAmount),
-				deliveryCostsString = numberToString(deliveryCosts);
-				
-				result += total;
+const forLoopBasket = (basketList, basketInvoice, basketMobile, deliveryCosts, result) =>{
+for (let i = 0; i < basket.basketMenus.length; i++) {
+	let basketMenu 					= basket.basketMenus[i],
+			basketInfo 					= basket.basketInfos[i],
+			basketAmount				=	basket.basketAmounts[i],
+			basketPrice					= basket.basketPrices[i],
+			total								= basketPrice * basketAmount,
+			basketPriceString 	= numberToString(total),
+			deliveryCostsString = numberToString(deliveryCosts);
+			
+			result += total;
 
-		let	subtotal 	= numberToString(result),
-				FullPrice	= numberToString(result + deliveryCosts);
-		
-		basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, basketPriceString, i);
-		basketInvoice.innerHTML	=		generateInvoiceBasket(subtotal, deliveryCostsString, FullPrice);
-		basketMobile.innerHTML 	= 	generateBasketMobileTitle(FullPrice);
-	}
+	let	subtotal 	= numberToString(result),
+			FullPrice	= numberToString(result + deliveryCosts);
+	
+	basketList.innerHTML 		+= 	generateFullBasket(basketMenu, basketInfo, basketAmount, basketPrice, basketPriceString, i);
+	basketInvoice.innerHTML	=		generateInvoiceBasket(subtotal, deliveryCostsString, FullPrice);
+	basketMobile.innerHTML 	= 	generateBasketMobileTitle(FullPrice);
+}
 }

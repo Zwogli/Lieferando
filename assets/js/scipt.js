@@ -39,6 +39,18 @@ function initBasket(){
     renderBasketBtnMobile();
 }
 
+function renderBasket(){
+	let basketList 		    = document.getElementById('basket-list'),
+			basketInvoice	= document.getElementById('basket-invoice'),
+			basketMobile	= document.getElementById('basket_mobile_btn'),
+			deliveryCosts	= 1.9,
+			result			= 0;
+
+	basketList.innerHTML 	= '';
+	basketInvoice.innerHTML = '';
+    forLoopBasket(basketList, basketInvoice, basketMobile, deliveryCosts, result);
+}
+
 const renderBasketBtnMobile = () => {
     if(basket.basketMenus.length == 0){
         document.getElementById('footer').classList.remove('footer_margin_btn');
